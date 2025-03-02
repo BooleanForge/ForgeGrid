@@ -10,11 +10,11 @@ class ForgeColumn {
   /// the second will occupy 3/8 of the space and the last 4/8 of the space
   int size;
 
-  /// If the column will be sortable or not
+  /// If the column can be sorted or not
   bool sortable;
 
-  /// Color of the header text
-  Color color;
+  /// Style of the header text
+  TextStyle textStyle;
 
   /// Color of the header background
   Color backgroundColor;
@@ -26,8 +26,8 @@ class ForgeColumn {
     required this.title,
     this.size = 1,
     this.sortable = false,
-    this.color = Colors.black,
-    this.backgroundColor = Colors.grey,
+    this.textStyle = const TextStyle(fontWeight: FontWeight.bold),
+    this.backgroundColor = Colors.white,
     this.align = TextAlign.left,
   });
 }
