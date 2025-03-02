@@ -16,7 +16,7 @@ Add `forge_grid` to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  forge_grid: ^0.0.1
+  forge_grid: latest
 ```
 
 Then run:
