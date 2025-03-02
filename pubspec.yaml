@@ -3,7 +3,6 @@ description: "Forge Grid is a Flutter datagrid made for mobile for displaying st
 version: 0.0.2
 homepage: https://www.booleanforge.com/
 repository: https://github.com/BooleanForge/ForgeGrid.git
-publisher: booleanforge.com
 
 environment:
   sdk: '>=3.4.3 <4.0.0'
