@@ -176,11 +176,19 @@ class _ForgeGridState extends State<ForgeGrid> {
             child: SingleChildScrollView(
               scrollDirection: Axis.vertical,
               child: Column(
-                children: _sortRows().map((row) => _buildRow(row, unitWidth: unitWidth)).toList(),
+                children: _buildRows(unitWidth),
               ),
             ),
           )
         : _buildEmptyTable();
+  }
+
+  List<Widget> _buildRows(double unitWidth) {
+    List<Widget> rows = _sortRows().map((row) => _buildRow(row, unitWidth: unitWidth)).toList();
+    if (widget.gridStyle != null && widget.gridStyle!.bottomPadding > 0) {
+      rows.add(SizedBox(width: double.infinity, height: widget.gridStyle!.bottomPadding));
+    }
+    return rows;
   }
 
   Widget _buildRow(ForgeRow row, {required double unitWidth}) {

@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.0.3
+
+* Added optional bottom padding to grid styling to accomodate for eventual floating actions buttons
+
 ## 0.0.2
 
 * Added initial styling for the grid and header.

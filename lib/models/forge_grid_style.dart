@@ -16,9 +16,13 @@ class ForgeGridStyle {
   /// If text inside rows will wrap when space ends. Default: [wrap].
   ForgeGridTextWrap textWrap;
 
+  /// Adds a padding to the last row. If used to accomodate for a [FloatingActionButton], 72 is the suggested size.
+  double bottomPadding;
+
   ForgeGridStyle({
     this.size = ForgeGridSize.contain,
     this.headerWrap = ForgeGridTextWrap.noWrap,
     this.textWrap = ForgeGridTextWrap.wrap,
+    this.bottomPadding = 0,
   });
 }
